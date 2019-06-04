@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 
@@ -151,6 +152,7 @@ header .logo {
   .cta img{
     display: none;
   }
+}
   @media (max-width:800px){
     section .cta {
       display: flex;
@@ -161,13 +163,13 @@ header .logo {
   }
   @media (max-width:800px){
     .cta-text{
-      margin-left: 225px;
+      margin-left: 150px;
     }
   }
   @media (max-width:800px){
-    header nav {
+    header {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
 
@@ -176,16 +178,79 @@ header .logo {
   img .logo{
     margin-left: 225px;
   }
+@media (max-width: 800px){
+  .container{
+    width: 95%;
+  }
+}
+/* PHONE UNDER THIS*/
+@media (max-width: 500px) {
+
+  header {
+      justify-content: center;
+  }
+
+  header nav {
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+  }
+
+  header nav a {
+      width: 100%;
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 20px;
+      border-bottom: 1px solid gray;
+  }
+
+  header nav a:first-child {
+      border-top: 1px solid gray;
+  }
+
+  header nav a:hover {
+      background: gray;
+  }
+
+  header .logo {
+      margin: 20px 0;
+  }
+
+  .cta {
+      margin-top: 50px;
+      flex-flow: column;
+      align-items: center;
+  }
+
+  .cta img {
+      max-width: 80%;
+  }
+
+  .main-content .top-content {
+      justify-content: space-around;
+      flex-direction: column;
+      height: 300px;
+  }
+
+  .main-content .bottom-content {
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 440px;
+  }
+
+  .text-content {
+      margin: 0;
+  }
+
+  .contact {
+      margin: 20px;
+  }
 }
 
-@media (max-width: 500px){
-  header nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-}
+  
+
 .main-content {
   border-top: 1px solid black;
   margin-top: 76px;
@@ -208,6 +273,7 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+  width: 95%;
 }
 
 .main-content .bottom-content {
